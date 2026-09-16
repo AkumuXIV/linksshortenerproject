@@ -63,6 +63,7 @@ export default async function Home() {
             Create an account and start building your personal link library.
           </p>
         </section>
-      </main>
+      </div>
+    </main>
   );
 }
