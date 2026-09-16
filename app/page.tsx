@@ -1,5 +1,5 @@
 import { auth } from "@clerk/nextjs/server";
-import { SignInButton, SignUpButton } from "@clerk/nextjs";
+import { SignUpButton } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
@@ -25,11 +25,6 @@ export default async function Home() {
             <SignUpButton mode="modal">
               <Button size="lg">Get started</Button>
             </SignUpButton>
-            <SignInButton mode="modal">
-              <Button size="lg" variant="outline">
-                I already have an account
-              </Button>
-            </SignInButton>
           </div>
         </section>
 
