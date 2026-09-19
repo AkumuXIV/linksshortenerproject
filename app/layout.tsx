@@ -36,10 +36,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <ClerkProvider appearance={{ theme: [shadcn, dark] }}>
           <header className="flex items-center justify-end gap-4 border-b border-black/[.08] px-6 py-3 dark:border-white/[.145]">
             <Show when="signed-out">
-              <SignInButton mode="modal">
+              <SignInButton mode="modal" forceRedirectUrl="/dashboard">
                 <Button variant="ghost">Sign in</Button>
               </SignInButton>
-              <SignUpButton mode="modal">
+              <SignUpButton mode="modal" forceRedirectUrl="/dashboard">
                 <Button>Sign up</Button>
               </SignUpButton>
             </Show>

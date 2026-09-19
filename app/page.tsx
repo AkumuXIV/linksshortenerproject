@@ -22,7 +22,7 @@ export default async function Home() {
             faster with a focused workflow built for speed.
           </p>
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <SignUpButton mode="modal">
+            <SignUpButton mode="modal" forceRedirectUrl="/dashboard">
               <Button size="lg">Get started</Button>
             </SignUpButton>
           </div>

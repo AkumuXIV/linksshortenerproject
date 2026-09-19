@@ -17,3 +17,4 @@ This file is the entry point for coding agents working in this repository. It is
 - Run `npm run lint` (and `npm run build` for non-trivial changes) before considering a change complete — see [docs/workflow.md](docs/workflow.md).
 - Never commit secrets or hardcode values that belong in environment variables.
 - If a request touches Clerk auth, database schema/migrations, or UI styling, read the corresponding doc above first — they capture conventions that aren't obvious from a single file in isolation.
+- **Never create or use `middleware.ts`.** It is deprecated in the version of Next.js used by this project. Use [proxy.ts](proxy.ts) instead for all middleware-equivalent logic (route interception, auth checks, redirects, etc.).
