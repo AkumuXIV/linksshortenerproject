@@ -1,3 +1,8 @@
+---
+description: Read this before creating or modifying UI components in the project.
+applyTo: '**/*.ts', '**/*.tsx'
+---
+
 # UI Components
 
 All UI elements in this app are built with **shadcn/ui**. Do not hand-roll custom components for things shadcn already provides.

@@ -1,3 +1,8 @@
+---
+description: Read this before implementing or modifying authentication in the project.
+applyTo: '**/*.ts', '**/*.tsx'
+---
+
 # Auth
 
 All authentication and session management is handled by **Clerk** (`@clerk/nextjs`). Do not introduce any other auth method (NextAuth, custom JWT/session handling, Passport, etc.) — if a task seems to need one, use Clerk's equivalent feature instead.
